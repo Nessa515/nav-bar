@@ -1,20 +1,42 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-  }
-  
-  li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color on hover */
-  li a:hover {
-    background-color: #555;
-    color: white;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+}
+
+.menu{
+  background-color: black;
+  padding: 8px;
+  /* width: 100px; */
+  height: 100vh;
+}
+
+.menu a{
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  width: 95%;
+  padding: 4px 2px;
+}
+
+.menu a:hover{
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.conteudo{
+  background-color: burlywood;
+  padding: 8px;
+  flex-grow: 1;
+}
+
+.menu-icone{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
